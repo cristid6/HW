@@ -80,6 +80,7 @@ while True:
                 palindrom += odd_letter[0:len(odd_letter)] + palindrom[::-1]
                 print(f'YES. The palindrom can look like this: {palindrom}')
             else:
-                palindrom += odd_letter[0:len(odd_letter)-2] + palindrom[::-1]
+                palindrom += odd_letter[0:1] + palindrom[::-1]
                 print(f'YES. The palindrom can look like this: {palindrom}')
+
 
