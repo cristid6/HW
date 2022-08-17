@@ -14,6 +14,8 @@
 #DA
 #Șirul poate fi permutat astfel: bbaaabb
 
+
+
 while True:
 
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
@@ -80,7 +82,7 @@ while True:
                 palindrom += odd_letter[0:len(odd_letter)] + palindrom[::-1]
                 print(f'YES. The palindrom can look like this: {palindrom}')
             else:
-                palindrom += odd_letter[0:1] + palindrom[::-1]
+                palindrom += odd_letter[0] + palindrom[::-1]
                 print(f'YES. The palindrom can look like this: {palindrom}')
 
 
