@@ -114,11 +114,13 @@ for sequence_list in all_sequences:
 
 for sorted_values in all_sequences_sorted_values:
     consecutive_values = 0
+    max_value = int()
     for i in range(0, len(sorted_values)-1):
         if sorted_values[i+1] - sorted_values[i] == 1:
             consecutive_values += 1
+    max_value = sorted_values[i+1]
     if consecutive_values == len(sorted_values)-1:
-        all_sequences_consecutive_values.append('cool')
+        all_sequences_consecutive_values.append('cool, ' + str(max_value) + ' is maximum value')
     else:
         all_sequences_consecutive_values.append('not cool')
 
