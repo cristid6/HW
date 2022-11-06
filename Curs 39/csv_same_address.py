@@ -1,4 +1,5 @@
-"""Sa se afiseze adresele care gazduiesc mai mult de 3 institutii si numele institutiilor gazduite."""
+"""Sa se afiseze adresele care gazduiesc mai mult
+de 3 institutii si numele institutiilor gazduite."""
 
 import csv
 import collections
@@ -20,4 +21,3 @@ for item in repeated_address:
         if element == item:
             print(entity[address.index(element)])
             address[address.index(element)] = "checked"
-
