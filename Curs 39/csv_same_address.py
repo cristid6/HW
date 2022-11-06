@@ -3,14 +3,12 @@
 import csv
 import collections
 
-cif = []
 entity = []
 address = []
 
 with open("lista_ep_portal_01102022.csv", encoding="utf8") as file:
     reader = csv.reader(file, delimiter=";")
     for line in reader:
-        cif.append(line[1])
         entity.append(line[2])
         address.append(str(line[4].split(",")[0:4]))
 
